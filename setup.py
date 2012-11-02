@@ -6,7 +6,7 @@ version = '1.0a1'
 setup(name='raptus.article.alias',
       version=version,
       description="Provides the possibility to create aliases for content objects which may be contained in an article and display them in the specified components",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
@@ -16,7 +16,7 @@ setup(name='raptus.article.alias',
       keywords='',
       author='Raptus AG',
       author_email='dev@raptus.com',
-      url='https://svn.plone.org/svn/collective/raptus.article/raptus.article.alias',
+      url='https://github.com/Raptus/raptus.article.alias',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['raptus', 'raptus.article'],

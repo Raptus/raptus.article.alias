@@ -2,20 +2,20 @@
     xmlns="http://namespaces.zope.org/zope">
 
     <adapter
-        name="table.full"
-        factory="raptus.article.table.browser.table.ComponentFull"
+        name="tables.full"
+        factory="raptus.article.table.browser.tables.ComponentFull"
         for=".interfaces.IAlias"
         provides="raptus.article.core.interfaces.IComponentSelection" />
 
     <adapter
-        name="flash.left"
-        factory="raptus.article.table.browser.table.ComponentLeft"
+        name="tables.left"
+        factory="raptus.article.table.browser.tables.ComponentLeft"
         for=".interfaces.IAlias"
         provides="raptus.article.core.interfaces.IComponentSelection" />
 
     <adapter
-        name="flash.right"
-        factory="raptus.article.table.browser.table.ComponentRight"
+        name="tables.right"
+        factory="raptus.article.table.browser.tables.ComponentRight"
         for=".interfaces.IAlias"
         provides="raptus.article.core.interfaces.IComponentSelection" />
 

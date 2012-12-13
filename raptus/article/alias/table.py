@@ -1,4 +1,4 @@
-from raptus.article.collections.adapters import Tables as BaseTables
+from raptus.article.table.adapters import Tables as BaseTables
 from raptus.article.alias.base import ProviderMixin
 
 class Tables(BaseTables, ProviderMixin):

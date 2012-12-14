@@ -76,14 +76,14 @@ class Alias(base.ATCTContent):
         """Returns the title of the referenced object
         """
         ref = self.getReference()
-        return ref.Title() if ref is not None else u''
+        return ref.Title() if ref is not None else ''
 
     security.declareProtected(permissions.View, 'Description')
     def Description(self):
         """Returns the description of the referenced object
         """
         ref = self.getReference()
-        return ref.Description() if ref is not None else u''
+        return ref.Description() if ref is not None else ''
 
     def getAllowedTypes(self):
         return getToolByName(self, 'portal_types')._getOb('Article').getProperty('allowed_content_types', [])

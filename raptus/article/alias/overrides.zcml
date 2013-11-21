@@ -31,8 +31,24 @@
       zcml:condition="installed raptus.article.links" />
 
     <adapter
+      for="raptus.article.core.interfaces.IArticle"
       factory=".maps.Maps"
       zcml:condition="installed raptus.article.maps" />
+    <adapter
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      factory=".maps.Maps"
+      zcml:condition="installed raptus.article.maps" />
+    <class class=".maps.Maps">
+      <allow
+        interface="raptus.article.maps.interfaces.IMaps" />
+    </class>
+      
+    <adapter
+      factory=".maps.Markers" />
+    <class class=".maps.Markers">
+      <allow
+        interface="raptus.article.maps.interfaces.IMarkers" />
+    </class>
 
     <adapter
       factory=".media.Videos"

@@ -17,10 +17,11 @@ class Manageable(BaseManageable):
         for brain in brains:
             obj = brain.getObject()
             if getattr(brain, 'alias', None) is not None:
-                url = brain.alias.getURL()
-                uid = brain.alias.UID
-                id = brain.alias.id
-                aobj = brain.alias.getObject()
+                alias = brain.alias.__of__(brain.aq_parent)
+                url = alias.getURL()
+                uid = alias.UID
+                id = alias.id
+                aobj = alias.getObject()
             else:
                 url = brain.getURL()
                 uid = brain.UID

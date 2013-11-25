@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0a5 (unreleased)
+1.0a5 (2013-11-25)
 ------------------
 
 - Fixed the Acquisition parent on the alias CatalogBrain in the patched manageable

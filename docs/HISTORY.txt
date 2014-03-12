@@ -4,7 +4,7 @@ Changelog
 1.0a6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Prevent orphaned references from getting re-indexed
 
 
 1.0a5 (2013-11-25)

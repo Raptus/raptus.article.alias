@@ -5,4 +5,5 @@ from Products.Archetypes.interfaces import IReferenceable
 @adapter(IReferenceable, IObjectModifiedEvent)
 def reindexAliasesOnModified(object, event):
     for alias in object.getBackReferences('aliasTo'):
-        alias.reindexObject()
+        if not alias is None:
+            alias.reindexObject()
